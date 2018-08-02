@@ -1,0 +1,246 @@
+*{
+	font-family: Arial;
+}
+body{
+	margin: 0;
+	padding: 0;
+}
+header{
+	display: flex;
+	justify-content: center;/* O elemento dentro do header ira ficar no centro*/
+	height: 120px;
+}
+.container{
+	display: flex; /*Com este valor, automaticamento os elementos irá ficar um do lado do outro*/
+	justify-content: space-between;/*espaço entre: Faz com que os conteudos dentro da div fique afastados um do outro*/
+	width: 990px;
+}	
+.logo{
+	display:flex;
+	align-items: center;
+}
+.menu{
+	display: flex;
+	align-items: center;
+}	
+nav ul,
+nav li{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+nav ul{
+	display: flex;
+}
+nav a{
+	display: block;
+	padding: 15px;
+	text-decoration: none;
+	text-transform: uppercase;/*Todas as letra vão ficar maiuscular*/
+	color: #727272;
+}
+/*Se estiver ativo ou se passa o mouser*/
+nav .active a,
+nav a:hover{
+	background-color: #39aae1;
+	color: white;
+}
+
+#banner{
+	display:flex;
+	justify-content: center; /*Vai alinhar o conteudo que esta dentro de #banner*/
+	background-image: url('../img/img1.jpg');
+	background-position: center;
+	background-size:cover; /*A imgens irá ocupar o tamanho da div sem distorcer a imagens*/
+	height: 670px;
+}
+.column{
+	flex-direction: column;
+}
+.banner_headline{
+	flex:1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;/*Como o alinhamento esta column o justify center vai ser verticalmente*/	
+
+}
+.banner_headline h1{
+	color: #FFF;
+	font-size: 70px;
+	text-shadow: 0px 1px 0px #555;
+	margin: 0;
+	padding: 0;
+	max-width: 350px;
+}
+.banner_headline h2{
+	color: #FFF;
+	font-size: 21px;
+	text-shadow: 0px 1px 0px #555;
+	margin: 0;
+	padding: 0;
+	max-width: 350px;
+	margin-top: 30px;
+}
+.banner_options{
+	height: 210px;
+	display: flex;
+}
+.banner1,
+.banner2,
+.banner3{
+	flex: 1;
+	color: #fff;
+	padding: 20px;
+}
+.banner1{
+	background-color:#39aae1;
+}
+.banner2{
+	background-color:#0079c7;
+}
+.banner3{
+	background-color:#2b4c99;
+}
+.banner_options h1{
+	font-size: 21px;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.banner_options p{
+	font-size: 12px;
+	line-height: 20px;
+	margin-top:20px;
+	margin-bottom: 20px;
+}
+.banner_options a{
+	display: inline-block;
+	border: 1px solid #FFF;
+	padding: 7px;
+	color: #FFF;
+	font-size: 13px;
+	text-decoration: none;
+}
+.banner3 ul{
+	display: flex;
+	flex-direction: column;
+	height: 150px;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.banner3 li{
+	display: flex;
+	flex:1;
+	justify-content: space-between;
+	border-bottom: 1px solid #0079c7;	
+}
+#geral{
+	display: flex;
+	justify-content: center;
+}
+#geral section{
+	flex: 2;
+}
+#geral aside{
+	flex: 1;
+}
+.flex{
+	display: flex;
+	flex-wrap: wrap;
+}
+.widget_title{
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+.widget_title_text{
+	color: #000;
+	font-size: 21px;
+	font-weight: bold;
+}
+.widget_title_bar{
+	width: 50px;
+	height: 3px;
+	background-color: #36a9e1;
+	margin-top: 10px;
+}
+.widget_text{
+	color: #5c5c5c;
+	font-size: 14px;
+	border-bottom: 1px solid #0079c7;
+	line-height: 19px;
+	padding-bottom: 20px;
+}
+.retan{
+	display: flex;
+	justify-content: space-between;	
+	flex-wrap: wrap;/*Quando não consegue mais compactar o espaço ele quebra a linha*/	
+}
+.retan div{	
+	width: 155px;
+	height: 155px;
+	margin-bottom: 20px;
+	background-color:#36a9e1;
+}
+article {
+	flex: 1;
+	margin-right: 20px;
+	min-width: 300px;
+}
+article a{
+	text-decoration: none;
+}
+article .news_data{
+	display: flex;
+}
+article .news_posted_at,
+article .news_comments{
+	color: #FFF;
+	font-size: 12px;
+	padding: 10px;
+}
+article .news_posted_at{
+	background-color: #2b4c99;
+	margin-right: 2px;	
+}
+article .news_comments {
+	background-color: #39aae1;
+}
+article .news_thumbnail{
+	margin-top: 30px;
+}
+article .news_thumbnail img{
+	width: 100%;
+	height: auto;
+}
+article .news_title{
+	margin-top: 25px;
+	margin-bottom: 25px;
+	color: #000;
+	font-size: 23px;
+}
+article .news_resume{
+	color: #5c5c5c;
+	line-height: 20px;
+	font-size: 14px;
+	margin-bottom: 30px;
+}
+.contatos ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	vertical-align: top;
+}
+.contatos li{
+	display: flex;
+	color: #5c5c5c;
+	font-size: 14px;
+	border-bottom: 1px solid #0079c7;
+	padding: 14px;
+}
+.contatos img{
+	max-height: 20px;
+	margin-right: 5px;
+}
+
+
+
