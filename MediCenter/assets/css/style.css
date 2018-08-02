@@ -166,7 +166,7 @@ nav a:hover{
 .widget_text{
 	color: #5c5c5c;
 	font-size: 14px;
-	border-bottom: 1px solid #0079c7;
+	border-bottom: 1px solid rgb(189,186,201);
 	line-height: 19px;
 	padding-bottom: 20px;
 }
@@ -234,13 +234,139 @@ article .news_resume{
 	display: flex;
 	color: #5c5c5c;
 	font-size: 14px;
-	border-bottom: 1px solid #0079c7;
+	border-bottom: 1px solid rgb(189,186,201);
 	padding: 14px;
 }
 .contatos img{
 	max-height: 20px;
 	margin-right: 5px;
 }
+footer{
+	background-color: #1e1e1e;
+	display: flex;
+	justify-content: center;
+}
+.footer_menu{
+	display: flex;
+}
+.fm_1, .fm_2,.fm_3{
+	flex: 1;
+	color: #FFF;
+	padding:20px;
+}
+.fm_1{
+	background-color:#39aae1;
+}
+.fm_2{
+	background-color:#0079c7;
+}
+.fm_3{
+	background-color:#2b4c99;
+}
+.footer_menu h1{
+	font-size: 21px;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.footer_menu p {
+	font-size: 12px;
+	line-height: 20px;
+	margin-top:20px;
+	margin-bottom: 20px;
+}
+.footer_area{
+	display: flex;
+}
+.footer_areaitem{
+	color: #fff;
+	flex: 1;
+}
+.flexColumn{
+	flex-direction: column;
+}
+footer .widget_title_text{
+	color: #fff;
+}
+.footer_copy{
+	border-top: 1px solid #2c2c2c;
+	height: 40px;
+	line-height: 40px;
+	color: #5c5c5c;
+	font-size: 12px;
+	margin-top: 30px;
+}
+.widget1{
+	color: #5c5c5c;
+	font-size: 12px;
+	line-height: 16px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding-right: 15px;
+}
 
-
+.widget1 ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.widget1 li{
+	display: flex;
+	justify-content: space-between;
+}
+.widget1 img{
+	margin-top: 15px;
+	max-height: 30px;
+	margin-right: 5px;
+}
+.branco{
+	color: #fff;
+}
+.widget2{
+	font-size: 12px;
+	padding-right: 15px;
+	padding-bottom: 15px;
+	line-height: 16px;
+}
+.widget2 p:last-child{
+	color: #0079c7;
+}
+.widget2 p{
+	margin: 0;
+	padding: 0;
+}
+.widget3{
+	font-size: 12px;
+	padding-right: 15px;
+	padding-bottom: 15px;
+	line-height: 16px;
+}
+.widget3 p:first-child{
+	color: #5c5c5c;
+}
+.widget p:last-child{
+	color: #0079c7;
+}
+.widget p{
+	margin: 0;
+	padding: 0;
+}
+@media (max-width: 600px){
+	.banner_headline{
+		padding: 20px;
+		margin-bottom: 100px;
+	}
+	.banner_headline h1{
+		font-size: 55px;
+	}	
+	.banner_headline h2{
+		font-size: 17px;
+	}
+	.banner_options{
+		height: auto;
+		flex-direction: column;
+	}
+	#banner{
+		height: auto;
+	}
+}
 
